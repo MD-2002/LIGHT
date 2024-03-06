@@ -1,0 +1,6 @@
+canvas{
+    height: 150mm;
+    width: 200mm;
+    background-color: rgba(66, 77, 85, 0.991);
+    border: 2px solid black;
+}
