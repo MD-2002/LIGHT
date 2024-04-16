@@ -43,26 +43,31 @@ e f g h  *   y     e*x+f*y+g*z+h
 i j k l      z  =  i*x+j*y+k*z+l
 m n o p      1     m*x+n*y+o*z+p
 
-x'=r*cos(alfa-beta)
-z'=r*sin(alfa-beta)
+x'=r*cos(beta-alfa)
+z'=r*sin(beta-alfa)
 
-x'=r*cos(alfa)cos(beta)+r*sin(alfa)*sin(beta)
-z'=r*sin(alfa)*cos(beta)-r*sin(beta)*cos(alfa)
+x'=r*cos(-alfa)*cos(beta)+r*sin(beta)*sin(-alfa)
+z'=r*sin(-alfa)cos(beta)-r*cos(-alfa)*sin(beta)
+
+then becomes:
+
+x'=r*cos(alfa)*cos(beta)-r*sin(beta)*sin(alfa)
+z'=-r*sin(alfa)cos(beta)-r*cos(alfa)*sin(beta)
 
 from alfa:
 
-sin (alfa)=(z/r) => z=r*sin(alfa)
-cos (alfa)=(x/r) => x=r*cos(alfa)
+sin (-alfa)=(z/r) => z=-r*sin(alfa)
+cos (-alfa)=(x/r) => x=r*cos(alfa)
 
 then:
 
-x' = xcos(beta) + zsin(beta)
-z' = zcos(beta) - xsin(beta)
+x' = x*cos(beta) + z*sin(beta)
+z' = z*cos(beta) - x*sin(beta)
 
 a*x+b*y+c*z+d = x*cos(beta)+y*0+sin(beta)*z+0
-e*x+f*y+g*z+h = x*0 + y*1 + z*0 + 0
-i*x+j*y+k*z+l = - xsin(beta)+ y*0 + zcos(beta)+0
-m*x+n*y+o*z+p = 0*x + 0*y + 0*z+ 1
+e*x+f*y+g*z+h =    x*0 + y*1 + z*0 + 0
+i*x+j*y+k*z+l = -x*sin(beta) + y*0 + z*cos(beta) + 0
+m*x+n*y+o*z+p =    0*x + 0*y + 0*z + 1
 
 a b c d      x     xcos(beta) + zsin(beta)
 e f g h  *   y                y
