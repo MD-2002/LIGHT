@@ -1,0 +1,24 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Controlled Triangle Lib</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+    <script src="gl-matrix-min.js" defer></script>
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <h2>Press X to move in the X axis </h2>
+    <h2>Press Y to move in the Y axis </h2>
+    <h2>Press Z to move in the Z axis </h2>
+    <canvas width="800" height="600" style="background-color: antiquewhite; border: 2px solid black;"></canvas>
+    <script>
+        const _c = document.getElementsByTagName('canvas')[0];
+        _c.width = window.innerWidth;
+        _c.height = window.innerHeight;
+    </script>
+</body>
+</html>
