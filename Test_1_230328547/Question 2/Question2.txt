@@ -1,4 +1,0 @@
-a b c d      x     a*x+b*y+c*z+d
-e f g h  *   y     e*x+f*y*g*z+h
-i j k l      z  =  i*x+j*y+k*z+l
-m n o p      1     m*x+n*y+o*z+p
