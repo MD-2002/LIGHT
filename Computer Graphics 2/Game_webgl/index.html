@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Simple WebGL Game</title>
+    
+</head>
+<body>
+    <h1>Falling Object Game</h1>
+    <h3><label id="pointsLabel">Points: 0</label></h3>
+    <b><p>ArrowRight: move the player to the right</p></b>
+	<b><p>ArrowLeft: move the player to the left</p></b>
+    <p><button onclick="pauseGame()">Pause/Unpause</button>
+        <button onclick="restartGame()">Restart</button></p>
+
+    <canvas id="gameCanvas" width="1000" height="350"></canvas>
+    <script src="game.js"></script>
+    
+</body>
+</html>
